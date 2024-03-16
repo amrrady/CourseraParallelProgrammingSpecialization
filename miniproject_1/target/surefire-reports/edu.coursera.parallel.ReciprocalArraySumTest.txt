@@ -1,0 +1,40 @@
+-------------------------------------------------------------------------------
+Test set: edu.coursera.parallel.ReciprocalArraySumTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 0, Errors: 4, Skipped: 0, Time elapsed: 0.014 sec <<< FAILURE! - in edu.coursera.parallel.ReciprocalArraySumTest
+testParManyTaskTwoHundredMillion(edu.coursera.parallel.ReciprocalArraySumTest)  Time elapsed: 0.006 sec  <<< ERROR!
+java.lang.Error: Unresolved compilation problems: 
+	The method parManyTaskArraySum(double[], int) is undefined for the type ReciprocalArraySum
+	The method parArraySum(double[]) is undefined for the type ReciprocalArraySum
+	The method parManyTaskArraySum(double[], int) is undefined for the type ReciprocalArraySum
+	The method parArraySum(double[]) is undefined for the type ReciprocalArraySum
+	at edu.coursera.parallel.ReciprocalArraySumTest.parTestHelper(ReciprocalArraySumTest.java:74)
+	at edu.coursera.parallel.ReciprocalArraySumTest.testParManyTaskTwoHundredMillion(ReciprocalArraySumTest.java:151)
+
+testParSimpleTwoMillion(edu.coursera.parallel.ReciprocalArraySumTest)  Time elapsed: 0.001 sec  <<< ERROR!
+java.lang.Error: Unresolved compilation problems: 
+	The method parManyTaskArraySum(double[], int) is undefined for the type ReciprocalArraySum
+	The method parArraySum(double[]) is undefined for the type ReciprocalArraySum
+	The method parManyTaskArraySum(double[], int) is undefined for the type ReciprocalArraySum
+	The method parArraySum(double[]) is undefined for the type ReciprocalArraySum
+	at edu.coursera.parallel.ReciprocalArraySumTest.parTestHelper(ReciprocalArraySumTest.java:74)
+	at edu.coursera.parallel.ReciprocalArraySumTest.testParSimpleTwoMillion(ReciprocalArraySumTest.java:117)
+
+testParSimpleTwoHundredMillion(edu.coursera.parallel.ReciprocalArraySumTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.Error: Unresolved compilation problems: 
+	The method parManyTaskArraySum(double[], int) is undefined for the type ReciprocalArraySum
+	The method parArraySum(double[]) is undefined for the type ReciprocalArraySum
+	The method parManyTaskArraySum(double[], int) is undefined for the type ReciprocalArraySum
+	The method parArraySum(double[]) is undefined for the type ReciprocalArraySum
+	at edu.coursera.parallel.ReciprocalArraySumTest.parTestHelper(ReciprocalArraySumTest.java:74)
+	at edu.coursera.parallel.ReciprocalArraySumTest.testParSimpleTwoHundredMillion(ReciprocalArraySumTest.java:127)
+
+testParManyTaskTwoMillion(edu.coursera.parallel.ReciprocalArraySumTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.Error: Unresolved compilation problems: 
+	The method parManyTaskArraySum(double[], int) is undefined for the type ReciprocalArraySum
+	The method parArraySum(double[]) is undefined for the type ReciprocalArraySum
+	The method parManyTaskArraySum(double[], int) is undefined for the type ReciprocalArraySum
+	The method parArraySum(double[]) is undefined for the type ReciprocalArraySum
+	at edu.coursera.parallel.ReciprocalArraySumTest.parTestHelper(ReciprocalArraySumTest.java:74)
+	at edu.coursera.parallel.ReciprocalArraySumTest.testParManyTaskTwoMillion(ReciprocalArraySumTest.java:140)
+
