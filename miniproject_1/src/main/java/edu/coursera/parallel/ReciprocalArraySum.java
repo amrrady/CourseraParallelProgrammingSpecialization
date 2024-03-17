@@ -125,7 +125,10 @@ public final class ReciprocalArraySum {
 
         @Override
         protected void compute() {
-            // TODO
+            double sum = 0;
+            for(int i = startIndexInclusive; i < endIndexExclusive; i++) {
+            	value += 1 / input[i];
+            }
         }
     }
 
@@ -143,11 +146,13 @@ public final class ReciprocalArraySum {
 
         double sum = 0;
 
-        // Compute sum of reciprocals of array elements
-        for (int i = 0; i < input.length; i++) {
-            sum += 1 / input[i];
-        }
-
+    	int mid = input.length / 2;
+    	ReciprocalArraySumTask L = new ReciprocalArraySumTask(0, mid, input);
+    	ReciprocalArraySumTask R = new ReciprocalArraySumTask(mid, input.length, input);
+    	R.fork();
+    	L.compute();
+    	R.join();
+        sum = L.getValue() + R.getValue();
         return sum;
     }
 
@@ -161,15 +166,30 @@ public final class ReciprocalArraySum {
      * @param numTasks The number of tasks to create
      * @return The sum of the reciprocals of the array input
      */
-    protected static double parManyTaskArraySum(final double[] input,
-            final int numTasks) {
+    protected static double parManyTaskArraySum(final double[] input, final int numTasks) {
         double sum = 0;
-
-        // Compute sum of reciprocals of array elements
-        for (int i = 0; i < input.length; i++) {
-            sum += 1 / input[i];
+        ReciprocalArraySumTask[] tasks = new ReciprocalArraySumTask[numTasks];
+        
+        for (int i = 0; i < numTasks; i++) {
+        	tasks[i] = new ReciprocalArraySumTask(getChunkStartInclusive(i, numTasks, input.length),
+        										  getChunkEndExclusive(i, numTasks, input.length),
+        										  input);
+        }
+        
+        for(int i = 1; i < numTasks; i++) {
+        	tasks[i].fork();
+        }
+        
+        tasks[0].compute();
+        
+        for(int i = 1; i < numTasks; i++) {
+        	tasks[i].join();
         }
 
+        for(int i = 0; i < numTasks; i++) {
+        	sum += tasks[i].getValue();
+        }
+        
         return sum;
     }
 }

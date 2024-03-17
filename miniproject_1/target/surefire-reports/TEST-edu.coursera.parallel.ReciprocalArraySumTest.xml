@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="edu.coursera.parallel.ReciprocalArraySumTest" time="0.007" tests="4" errors="4" skipped="0" failures="0">
+<testsuite name="edu.coursera.parallel.ReciprocalArraySumTest" time="36.916" tests="4" errors="0" skipped="0" failures="1">
   <properties>
     <property name="jansi.mode" value="force"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="21.0.2+13-LTS-58"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-21.jdk/Contents/Home/lib"/>
-    <property name="maven.multiModuleProjectDirectory" value="/Users/amrrady/Documents/ParallelProgramminginJava/miniproject_1"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/amrrady/Documents/CourseraParallelProgrammingSpecialization/miniproject_1"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="java.vendor.url" value="https://java.oracle.com/"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -14,7 +14,7 @@
     <property name="user.country" value="BE"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="/Users/amrrady/Documents/ParallelProgramminginJava/miniproject_1"/>
+    <property name="user.dir" value="/Users/amrrady/Documents/CourseraParallelProgrammingSpecialization/miniproject_1"/>
     <property name="java.vm.compressedOopsMode" value="Zero based"/>
     <property name="java.runtime.version" value="21.0.2+13-LTS-58"/>
     <property name="os.arch" value="aarch64"/>
@@ -23,7 +23,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="stderr.encoding" value="UTF-8"/>
     <property name="os.name" value="Mac OS X"/>
-    <property name="classworlds.conf" value="/Users/amrrady/Documents/eclipse-workspace/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf11839742663775354342.tmp"/>
+    <property name="classworlds.conf" value="/Users/amrrady/Documents/eclipse-workspace/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf12068533541303749840.tmp"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
     <property name="stdout.encoding" value="UTF-8"/>
     <property name="java.library.path" value="/Users/amrrady/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
@@ -50,55 +50,25 @@
     <property name="java.version" value="21.0.2"/>
     <property name="native.encoding" value="UTF-8"/>
     <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="maven.home" value="/Users/amrrady/Documents/ParallelProgramminginJava/miniproject_1/EMBEDDED"/>
+    <property name="maven.home" value="/Users/amrrady/Documents/CourseraParallelProgrammingSpecialization/miniproject_1/EMBEDDED"/>
     <property name="style.color" value="always"/>
     <property name="file.separator" value="/"/>
     <property name="java.version.date" value="2024-01-16"/>
     <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
     <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
     <property name="sun.cpu.endian" value="little"/>
-    <property name="m2e.build.project.data.socket.port" value="63893"/>
+    <property name="m2e.build.project.data.socket.port" value="64088"/>
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
   </properties>
-  <testcase name="testParManyTaskTwoHundredMillion" classname="edu.coursera.parallel.ReciprocalArraySumTest" time="0.006">
-    <error message="Unresolved compilation problems: &#10;	The method parManyTaskArraySum(double[], int) is undefined for the type ReciprocalArraySum&#10;	The method parArraySum(double[]) is undefined for the type ReciprocalArraySum&#10;	The method parManyTaskArraySum(double[], int) is undefined for the type ReciprocalArraySum&#10;	The method parArraySum(double[]) is undefined for the type ReciprocalArraySum&#10;" type="java.lang.Error">java.lang.Error: Unresolved compilation problems: 
-	The method parManyTaskArraySum(double[], int) is undefined for the type ReciprocalArraySum
-	The method parArraySum(double[]) is undefined for the type ReciprocalArraySum
-	The method parManyTaskArraySum(double[], int) is undefined for the type ReciprocalArraySum
-	The method parArraySum(double[]) is undefined for the type ReciprocalArraySum
-	at edu.coursera.parallel.ReciprocalArraySumTest.parTestHelper(ReciprocalArraySumTest.java:74)
-	at edu.coursera.parallel.ReciprocalArraySumTest.testParManyTaskTwoHundredMillion(ReciprocalArraySumTest.java:151)
-</error>
-  </testcase>
-  <testcase name="testParSimpleTwoMillion" classname="edu.coursera.parallel.ReciprocalArraySumTest" time="0.001">
-    <error message="Unresolved compilation problems: &#10;	The method parManyTaskArraySum(double[], int) is undefined for the type ReciprocalArraySum&#10;	The method parArraySum(double[]) is undefined for the type ReciprocalArraySum&#10;	The method parManyTaskArraySum(double[], int) is undefined for the type ReciprocalArraySum&#10;	The method parArraySum(double[]) is undefined for the type ReciprocalArraySum&#10;" type="java.lang.Error">java.lang.Error: Unresolved compilation problems: 
-	The method parManyTaskArraySum(double[], int) is undefined for the type ReciprocalArraySum
-	The method parArraySum(double[]) is undefined for the type ReciprocalArraySum
-	The method parManyTaskArraySum(double[], int) is undefined for the type ReciprocalArraySum
-	The method parArraySum(double[]) is undefined for the type ReciprocalArraySum
-	at edu.coursera.parallel.ReciprocalArraySumTest.parTestHelper(ReciprocalArraySumTest.java:74)
-	at edu.coursera.parallel.ReciprocalArraySumTest.testParSimpleTwoMillion(ReciprocalArraySumTest.java:117)
-</error>
-  </testcase>
-  <testcase name="testParSimpleTwoHundredMillion" classname="edu.coursera.parallel.ReciprocalArraySumTest" time="0">
-    <error message="Unresolved compilation problems: &#10;	The method parManyTaskArraySum(double[], int) is undefined for the type ReciprocalArraySum&#10;	The method parArraySum(double[]) is undefined for the type ReciprocalArraySum&#10;	The method parManyTaskArraySum(double[], int) is undefined for the type ReciprocalArraySum&#10;	The method parArraySum(double[]) is undefined for the type ReciprocalArraySum&#10;" type="java.lang.Error">java.lang.Error: Unresolved compilation problems: 
-	The method parManyTaskArraySum(double[], int) is undefined for the type ReciprocalArraySum
-	The method parArraySum(double[]) is undefined for the type ReciprocalArraySum
-	The method parManyTaskArraySum(double[], int) is undefined for the type ReciprocalArraySum
-	The method parArraySum(double[]) is undefined for the type ReciprocalArraySum
-	at edu.coursera.parallel.ReciprocalArraySumTest.parTestHelper(ReciprocalArraySumTest.java:74)
-	at edu.coursera.parallel.ReciprocalArraySumTest.testParSimpleTwoHundredMillion(ReciprocalArraySumTest.java:127)
-</error>
-  </testcase>
-  <testcase name="testParManyTaskTwoMillion" classname="edu.coursera.parallel.ReciprocalArraySumTest" time="0">
-    <error message="Unresolved compilation problems: &#10;	The method parManyTaskArraySum(double[], int) is undefined for the type ReciprocalArraySum&#10;	The method parArraySum(double[]) is undefined for the type ReciprocalArraySum&#10;	The method parManyTaskArraySum(double[], int) is undefined for the type ReciprocalArraySum&#10;	The method parArraySum(double[]) is undefined for the type ReciprocalArraySum&#10;" type="java.lang.Error">java.lang.Error: Unresolved compilation problems: 
-	The method parManyTaskArraySum(double[], int) is undefined for the type ReciprocalArraySum
-	The method parArraySum(double[]) is undefined for the type ReciprocalArraySum
-	The method parManyTaskArraySum(double[], int) is undefined for the type ReciprocalArraySum
-	The method parArraySum(double[]) is undefined for the type ReciprocalArraySum
-	at edu.coursera.parallel.ReciprocalArraySumTest.parTestHelper(ReciprocalArraySumTest.java:74)
-	at edu.coursera.parallel.ReciprocalArraySumTest.testParManyTaskTwoMillion(ReciprocalArraySumTest.java:140)
-</error>
+  <testcase name="testParSimpleTwoMillion" classname="edu.coursera.parallel.ReciprocalArraySumTest" time="0.234"/>
+  <testcase name="testParSimpleTwoHundredMillion" classname="edu.coursera.parallel.ReciprocalArraySumTest" time="20.69"/>
+  <testcase name="testParManyTaskTwoMillion" classname="edu.coursera.parallel.ReciprocalArraySumTest" time="0.184"/>
+  <testcase name="testParManyTaskTwoHundredMillion" classname="edu.coursera.parallel.ReciprocalArraySumTest" time="15.808">
+    <failure message="It was expected that the many-task parallel implementation would run at least 6,400000x faster, but it only achieved 6,387097x speedup" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: It was expected that the many-task parallel implementation would run at least 6,400000x faster, but it only achieved 6,387097x speedup
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at edu.coursera.parallel.ReciprocalArraySumTest.testParManyTaskTwoHundredMillion(ReciprocalArraySumTest.java:155)
+</failure>
   </testcase>
 </testsuite>
